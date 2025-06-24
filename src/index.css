@@ -1,12 +1,14 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --height-topandbottom-blur-h: 500px;
+	--height-topandbottom-blur-h: 500px;
 
-  --width-topandbottom-blur-w: 500px;
+	--width-topandbottom-blur-w: 500px;
 
-  --color-blue: #1d4ed8;
-  --color-green: #16a34a;
+	--color-blue: #1d4ed8;
+	--color-green: #16a34a;
 }
 
 /*
@@ -18,37 +20,37 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
-}
-
-.change {
-  display: block;
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
 }
 
 .change .bar {
-  background-color: white;
+	background-color: whitesmoke;
+}
+
+.change {
+	display: block;
 }
 
 .change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
+	transform: translateY(8px) rotateZ(-50deg);
 }
 
 .change #bar2 {
-  opacity: 0;
+	opacity: 0;
 }
 
 .change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
+	transform: translateY(-8px) rotateZ(50deg);
 }
 
 .change-bg {
-  width: 520px;
-  height: 460px;
-  transform: translate(-60%,-30%);
+	width: 620px;
+	height: 560px;
+	transform: translate(-30%, -20%);
 }
