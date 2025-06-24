@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@dotlottie/dotlottie-js": "^0.8.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.2",
+    "@mui/styled-engine-sc": "^7.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^7.1.0",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
