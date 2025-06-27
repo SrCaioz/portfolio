@@ -19,6 +19,7 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
+
 @layer base {
 	*,
 	::after,
@@ -53,4 +54,8 @@
 	width: 620px;
 	height: 560px;
 	transform: translate(-30%, -20%);
+}
+
+#FloatingBall {
+	border-radius: 69% 31% 43% 57% / 47% 38% 62% 53%;
 }
