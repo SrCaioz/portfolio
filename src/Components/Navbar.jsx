@@ -15,15 +15,15 @@ export default function Navbar() {
 				>
 					<div
 						id="bar1"
-						className="bar block h-1 w-full bg-black dark:bg-white  rounded-md transition duration-300 ease-linear -translate-y-1"
+						className="bar block h-1 w-full bg-gray-900 dark:bg-white  rounded-md transition duration-300 ease-linear -translate-y-1"
 					></div>
 					<div
 						id="bar2"
-						className="bar block h-1 w-full bg-black dark:bg-white rounded-md transition duration-300 ease-linear"
+						className="bar block h-1 w-full bg-gray-900 dark:bg-white rounded-md transition duration-300 ease-linear"
 					></div>
 					<div
 						id="bar3"
-						className="bar block h-1 w-full bg-black dark:bg-white rounded-md transition duration-300 ease-linear translate-y-1"
+						className="bar block h-1 w-full bg-gray-900 dark:bg-white rounded-md transition duration-300 ease-linear translate-y-1"
 					></div>
 				</div>
 				<nav id="nav" className="hidden transition duration-300 ease-linear">
@@ -54,7 +54,7 @@ export default function Navbar() {
 
 			<div
 				id="menu-bg"
-				className="absolute z-10 rounded-full -top-5 left-5/6 -right-full transition-all duration-300 ease-in w-0 h-0 bg-blue"
+				className="absolute z-10 rounded-full -top-5 left-5/6 -right-full transition-all duration-300 ease-in w-0 h-0 bg-blue inset-shadow-sm inset-shadow-black"
 			></div>
 		</>
 	);
