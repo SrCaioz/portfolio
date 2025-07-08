@@ -1,21 +1,21 @@
-function NavbarToggle() {
-	document.getElementById("menu-bar").classList.toggle("change");
-	document.getElementById("nav").classList.toggle("change");
-	document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+import ToggleNavBarMobileFunc from "../scripts/ToggleNavBarMobileFunc";
+import LinkRoutNavBar from "./LinkRouteNavBar";
+import HomeImage from "../assets/animations/home.json";
+import About from "../assets/animations/about.json";
+import Projects from "../assets/animations/projects.json";
 
 export default function Navbar() {
 	return (
 		<>
-			<div className="absolute z-20 top-6 right-4">
+			<div className="absolute z-20 top-7 right-4">
 				<div
 					id="menu-bar"
-					onClick={NavbarToggle}
-					className="w-11 h-10  cursor-pointer"
+					onClick={ToggleNavBarMobileFunc}
+					className="absolute right-2 w-11 h-10 cursor-pointer"
 				>
 					<div
 						id="bar1"
-						className="bar block h-1 w-full bg-gray-900 dark:bg-white  rounded-md transition duration-300 ease-linear -translate-y-1"
+						className="bar block h-1 w-full bg-gray-900 dark:bg-white rounded-md transition duration-300 ease-linear -translate-y-1"
 					></div>
 					<div
 						id="bar2"
@@ -26,28 +26,28 @@ export default function Navbar() {
 						className="bar block h-1 w-full bg-gray-900 dark:bg-white rounded-md transition duration-300 ease-linear translate-y-1"
 					></div>
 				</div>
-				<nav id="nav" className="hidden transition duration-300 ease-linear">
-					<ul className="h-52 w-auto ">
-						<li className="mt-5">
-							<a href="" className="p-4 text-white text-xl ">
-								a
-							</a>
-						</li>
-						<li className="mt-5">
-							<a href="" className="p-4 text-white text-xl ">
-								b
-							</a>
-						</li>
-						<li className="mt-5">
-							<a href="" className="p-4 text-white text-xl ">
-								c
-							</a>
-						</li>
-						<li className="mt-5">
-							<a href="" className="p-4 text-white text-xl ">
-								d
-							</a>
-						</li>
+				<nav id="nav" className="hidden">
+					<ul className="absolute top-10 -right-5 w-56">
+						<LinkRoutNavBar
+							Route={"/"}
+							Text={"Pagina inicial"}
+							MyImageNavBar={HomeImage}
+						/>
+						<LinkRoutNavBar
+							Route={"/Sobre"}
+							Text={"Sobre mim"}
+							MyImageNavBar={About}
+						/>
+						<LinkRoutNavBar
+							Route={"/Projetos"}
+							Text={"Projetos"}
+							MyImageNavBar={Projects}
+						/>
+						<LinkRoutNavBar
+							Route={"/Contato"}
+							Text={"Contato"}
+							MyImageNavBar={About}
+						/>
 					</ul>
 				</nav>
 			</div>
