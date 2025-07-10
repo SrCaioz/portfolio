@@ -2,8 +2,9 @@ import Navbar from "../Components/Navbar";
 import { FormControlLabel } from "@mui/material";
 import { MaterialUISwitch } from "../Components/SwithTheme";
 import { useEffect, useState } from "react";
+import 'animate.css';
 
-export default function Header({ className }) {
+export default function Header() {
 	const [theme, setTheme] = useState("light");
 	const [checked, setChecked] = useState(() => {
 		return (
@@ -39,13 +40,12 @@ export default function Header({ className }) {
 	}, []);
 
 	return (
-		<div className={className}>
+		<div className="fixed w-full -top-0.5 bg-black z-20">
 			<Navbar />
 			<div className="absolute top-4 right-15 p-0">
 				<FormControlLabel
 					control={
 						<MaterialUISwitch
-							className="dark:"
 							onChange={toggleTheme}
 							checked={checked}
 						/>
