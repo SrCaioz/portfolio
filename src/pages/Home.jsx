@@ -2,31 +2,55 @@ import Header from "../Components/Header";
 import BackGround from "../Components/BackGround";
 import FloatingBall from "../Components/FloatingBall";
 import Footer from "../Components/Footer";
-import 'animate.css';
+import ButtonLinkHome from "../Components/ButtonLinkHome";
+import Linkedin from "../assets/static/linkedin.svg"
+import Github from "../assets/static/github.svg"
+import Instagram from "../assets/static/instagram.svg"
+import "animate.css";
 
 export default function Home() {
 	return (
-		<div className="relative h-screen w-screen overflow-hidden">
+		<div className="relative w-full h-full">
 			<BackGround />
-			<Header/>
-			<div className="absolute top-16 p-3 left-30 rounded-md bg-gray-300 dark:bg-black">
-				<p className="font-bold text-2xl dark:text-white pointer-events-none select-none">
-					Olá, eu sou Caio Cezar.
-				</p>
+			<Header />
+			<div className="relative h-full p-1">
+				<div className="relative mt-16">
+					<div className="text-center">
+						<p className="font-extrabold text-6xl text-blue mb-2">
+							Caio Cezar
+						</p>
+						<p className="font-semibold dark:text-white mb-2">
+							Rio de Janeiro - Brasil
+						</p>
+						<p className="font-semibold text-2xl dark:text-white mb-2">
+							Este portfólio nasceu do desejo de compartilhar minha trajetória e
+							projetos, e, através deles, demonstrar minhas habilidades e
+							crescimento profissional.
+						</p>
+						<div className="grid grid-cols-3 gap-2 mt-3">
+							<ButtonLinkHome
+								Link={"https://www.linkedin.com/in/caio-cezar-domingos-de-oliveira-01b389228/"} 
+								MySVG={Linkedin} 
+								NameInfo={"Linkedin"}
+							/>
+							<ButtonLinkHome
+								Link={"https://github.com/Skarzyll"} 
+								MySVG={Github} 
+								NameInfo={"Github"}
+							/>
+							<ButtonLinkHome
+								Link={"https://www.instagram.com/sr.caioz"} 
+								MySVG={Instagram} 
+								NameInfo={"Instagram"}
+							/>
+						</div>
+					</div>
+					<div className="flex w-full justify-center">
+						<FloatingBall/>
+					</div>
+				</div>
 			</div>
-			<FloatingBall />
-			<div className="absolute w-11/12 bottom-26 right-5 p-3 ml-1 mr-2 rounded-md bg-gray-300 dark:bg-black">
-				<h1 className="font-bold text-black text-2xl dark:text-white pointer-events-none select-none">
-					Seja bem-vindo(a) ao meu Portfólio
-				</h1>
-				<p className="text-black dark:text-white pointer-events-none select-none">
-					Este portfólio nasceu do desejo de compartilhar minha trajetória e projetos, e, através deles, demonstrar minhas habilidades e crescimento profissional.
-				</p>
-				<h3 className="font-semibold text-2xl text-black dark:text-white pointer-events-none select-none">
-					Obrigado pela visita!
-				</h3>
-			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 }
