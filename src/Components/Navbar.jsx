@@ -2,12 +2,12 @@ import ToggleNavBarMobileFunc from "../scripts/ToggleNavBarMobileFunc";
 import LinkRoutNavBar from "./LinkRouteNavBar";
 import HomeImage from "../assets/animations/home.json";
 import About from "../assets/animations/about.json";
-import Projects from "../assets/animations/projects.json";
+//import Projects from "../assets/animations/projects.json";
 
 export default function Navbar() {
 	return (
 		<>
-			<div className="absolute z-20 top-7 right-4">
+			<div className="absolute z-20 top-6 right-4 md:hidden">
 				<div
 					id="menu-bar"
 					onClick={ToggleNavBarMobileFunc}
@@ -30,7 +30,7 @@ export default function Navbar() {
 					<ul className="absolute top-10 -right-5 w-56">
 						<LinkRoutNavBar
 							Route={"/"}
-							Text={"Pagina inicial"}
+							Text={"Página inicial"}
 							MyImageNavBar={HomeImage}
 						/>
 						<LinkRoutNavBar
@@ -38,7 +38,7 @@ export default function Navbar() {
 							Text={"Sobre mim"}
 							MyImageNavBar={About}
 						/>
-						<LinkRoutNavBar
+						{/* <LinkRoutNavBar
 							Route={"/Projetos"}
 							Text={"Projetos"}
 							MyImageNavBar={Projects}
@@ -47,7 +47,7 @@ export default function Navbar() {
 							Route={"/Contato"}
 							Text={"Contato"}
 							MyImageNavBar={About}
-						/>
+						/> */}
 					</ul>
 				</nav>
 			</div>

@@ -21,7 +21,7 @@ export default function LinkRoutNavBar({ Route, Text, MyImageNavBar }) {
 				to={{
 					pathname: `${Route}`,
 				}}
-				className="flex justify-evenly items-center w-full text-white text-xl rounded-2xl hover:bg-blue-400 hover:opacity-65"
+				className="flex justify-evenly items-center w-full text-white text-xl rounded-2xl hover:bg-gradient-to-r hover:from-white/30 hover:to-white/3 hover:opacity-65"
 			>
 				<Lottie
 					className="w-14"

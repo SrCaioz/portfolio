@@ -36,9 +36,9 @@ export { Divdad, Topbg, Bottombg }
  */
 export default function BackGround() {
 	return (
-		<div className="fixed inset-0 min-h-screen w-full overflow-hidden transition-colors duration-200 bg-gradient-to-b from-slate-700 from-5% to-95% to-white dark:from-black dark:via-slate-900 dark:to-black animate-pulse -z-50">
-			<div className="absolute -left-40 -top-40 h-96 w-9/12 rounded-full blur-3xl bg-gradient-to-br from-green to-blue animate-pulse -z-40"></div>
-			<div className="absolute -right-40 -bottom-40 h-96 w-9/12 rounded-full blur-3xl bg-gradient-to-br from-blue to-green animate-pulse -z-40"></div>
+		<div className="fixed inset-0 min-h-screen w-full overflow-hidden transition-colors duration-200 bg-gradient-to-br from-slate-400 to-white dark:from-slate-800 dark:to-black -z-50">
+			<div className="absolute -left-40 -top-40 h-96 w-9/12 rounded-full blur-3xl bg-gradient-to-br from-green to-blue animate-pulse -z-40 md:w-topandbottom-blur-w md:h-topandbottom-blur-h"></div>
+			<div className="absolute -right-40 -bottom-40 h-96 w-9/12 rounded-full blur-3xl bg-gradient-to-br from-blue to-green animate-pulse -z-40 md:w-topandbottom-blur-w md:h-topandbottom-blur-h"></div>
 		</div>
 	);
 }
