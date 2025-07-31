@@ -1,6 +1,7 @@
 import LinkRoutNavBar from "./LinkRouteNavBar";
 import HomeImage from "../assets/animations/home.json";
 import About from "../assets/animations/about.json";
+import Projects from "../assets/animations/projects.json";
 
 export default function NavbarPcW() {
 	return (
@@ -23,6 +24,11 @@ export default function NavbarPcW() {
 					Route={"/Sobre"}
 					Text={"Sobre mim"}
 					MyImageNavBar={About}
+				/>
+				<LinkRoutNavBar
+					Route={"/Projetos"}
+					Text={"Projetos"}
+					MyImageNavBar={Projects}
 				/>
 			</ul>
 		</div>
