@@ -3,6 +3,7 @@ import NodeIcon from "../assets/static/nodejs.svg";
 import ExpressIcon from "../assets/static/express.svg";
 import AxiosIcon from "../assets/static/axios.svg";
 import MySQLIcon from "../assets/static/mysql.svg";
+import Sequelize from "../assets/static/sequelize.svg";
 
 export default function BackendTechs() {
 	return (
@@ -21,12 +22,20 @@ export default function BackendTechs() {
 					imgName={"Express"}
 					TechName={"Express"}
 				/>
-				<ButtonsTechName img={AxiosIcon} imgName={"Axios"} TechName={"Axios"} 
+				<ButtonsTechName
+					img={AxiosIcon}
+					imgName={"Axios"}
+					TechName={"Axios"}
+				/>
+				<ButtonsTechName
+					img={MySQLIcon}
+					imgName={"MySQL"}
+					TechName={"MySQL"}
                 />
-				<ButtonsTechName 
-                img={MySQLIcon} 
-                imgName={"MySQL"} 
-                TechName={"MySQL"} 
+				<ButtonsTechName
+					img={Sequelize}
+					imgName={"Sequelize"}
+					TechName={"Sequelize"}
                 />
 			</div>
 		</div>
