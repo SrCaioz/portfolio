@@ -14,7 +14,7 @@ export default function Home() {
 		<div className="relative w-full h-full">
 			<BackGround />
 			<Header />
-			<div className="relative h-full p-1">
+			<div className="relative h-full p-4">
 				<div className="relative mt-16">
 					<div className="md:grid md:grid-cols-3 md:overflow-hidden">
 						<div className="hidden md:block">
