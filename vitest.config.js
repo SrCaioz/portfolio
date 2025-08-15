@@ -5,8 +5,8 @@ export default defineConfig({
 	plugins: [react()],
 	test: {
 		environment: "jsdom",
-		globals: true, // opcional: permite não importar describe/it/expect se quiser
+		globals: true,
 		setupFiles: "./src/setupTests.ts",
-		include: ["src/**/*.test.{js,jsx,ts,tsx}"], // garanta que seu arquivo segue esse padrão
+		include: ["src/**/*.test.{js,jsx,ts,tsx}"],
 	},
 });
