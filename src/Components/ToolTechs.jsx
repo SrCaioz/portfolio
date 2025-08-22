@@ -3,6 +3,7 @@ import GitIcon from "../assets/static/git.svg";
 import ZodIcon from "../assets/static/zod.svg";
 import JestIcon from "../assets/static/jest.svg";
 import PuppeteerIcon from "../assets/static/puppeteer.svg";
+import TestingL from "../assets/static/testing-library.svg";
 
 export default function ToolsTechs() {
 	return (
@@ -30,6 +31,11 @@ export default function ToolsTechs() {
                     img={PuppeteerIcon}
                     imgName={"Puppeteer"}
                     TechName={"Puppeteer"}
+                />
+				<ButtonsTechName
+                    img={TestingL}
+                    imgName={"Testing Library"}
+                    TechName={"Testing Library"}
                 />
 			</div>
 		</div>
