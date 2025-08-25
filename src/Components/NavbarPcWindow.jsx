@@ -6,7 +6,7 @@ import Projects from "../assets/animations/projects.json";
 
 export default function NavbarPcW() {
 	return (
-		<div className=" max-w-72 p-2 rounded-md bg-blue">
+		<div className="min-w-56 max-w-72 p-2 rounded-md bg-blue">
 			<div className="w-full border-b-2 text-end border-b-white">
 				<h1 className="font-extrabold text-2xl text-white">
 					Caio Cezar
