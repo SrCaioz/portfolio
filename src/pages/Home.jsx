@@ -41,7 +41,7 @@ export default function Home() {
 									NameInfo={"Linkedin"}
 								/>
 								<ButtonLinkHome
-									Link={"https://github.com/Skarzyll"}
+									Link={"https://github.com/SrCaioz"}
 									MySVG={Github}
 									NameInfo={"Github"}
 								/>
