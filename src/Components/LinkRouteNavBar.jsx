@@ -4,9 +4,11 @@ import { useRef } from "react";
 
 export default function LinkRoutNavBar({ Route, Text, MyImageNavBar }) {
 	const lottieRef = useRef();
+
 	const handleMouseEnter = () => {
 		lottieRef.current.play();
 	};
+	
 	const handleMouseLeave = () => {
 		lottieRef.current.stop();
 	};
