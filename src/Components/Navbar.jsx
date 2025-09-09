@@ -3,7 +3,7 @@ import LinkRoutNavBar from "./LinkRouteNavBar";
 import HomeImage from "../assets/animations/home.json";
 import About from "../assets/animations/about.json";
 import Projects from "../assets/animations/projects.json";
-//import Contact from "../assets/animations/contact.json";
+import Contact from "../assets/animations/contact.json";
 
 export default function Navbar() {
 	return (
@@ -44,11 +44,11 @@ export default function Navbar() {
 							Text={"Projetos"}
 							MyImageNavBar={Projects}
 						/>
-						{/* <LinkRoutNavBar
+						<LinkRoutNavBar
 							Route={"/Contato"}
 							Text={"Contato"}
 							MyImageNavBar={Contact}
-						/> */}
+						/>
 					</ul>
 				</nav>
 			</div>
