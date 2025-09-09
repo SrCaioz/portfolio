@@ -32,7 +32,7 @@ export default function NavbarPcW() {
 					MyImageNavBar={Projects}
 				/>
 				<LinkRoutNavBar
-					Route={"/Projetos"}
+					Route={"/Contato"}
 					Text={"Contato"}
 					MyImageNavBar={Contact}
 				/>
